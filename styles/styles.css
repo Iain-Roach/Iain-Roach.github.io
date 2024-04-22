@@ -1,0 +1,181 @@
+:root {
+    --cadet-gray: #929A9Fff;
+    --charcoal: rgb(23, 72, 94);
+    --tufts-blue: #3192DFff;
+    --burnt-umber: #933325ff;
+    --charcoal-2: #0F3A4Cff;
+
+
+    --blue:#007bff;
+    --indigo:#6610f2;
+    --purple:#6f42c1;
+    --pink:#e83e8c;
+    --red:#dc3545;
+    --orange:#fd7e14;
+    --yellow:#ffc107;
+    --green:#28a745;
+    --teal:#20c997;
+    --cyan:#17a2b8;
+    --white:#fff;
+    --gray:#6c757d;
+    --gray-dark:#343a40;
+    --primary:#007bff;
+    --secondary:#6c757d;
+    --success:#28a745;
+    --info:#17a2b8;
+    --warning:#ffc107;
+    --danger:#dc3545;
+    --light:#f8f9fa;
+    --dark:#343a40;
+    --breakpoint-xs:0;
+    --breakpoint-sm:576px;
+    --breakpoint-md:768px;
+    --breakpoint-lg:992px;
+    --breakpoint-xl:1200px;
+    --font-family-sans-serif:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace
+  }
+  *,
+  ::after,
+  ::before {
+    box-sizing:border-box
+  }
+  
+#wrapper {
+    border: 15px solid var(--burnt-umber);
+}
+
+  body {
+    padding-top: 42px;
+    background-color: var(--charcoal);
+  } 
+
+  #navbar {
+    background-color: var(--charcoal-2);
+  }
+
+  #navbar a {
+    color: whitesmoke;
+  }
+
+  #navbar a:hover {
+    background-color: var(--charcoal);
+    color: var(--cadet-gray);
+  }
+
+  #navbar a:link {
+    color: whitesmoke;
+  }
+
+  #navbar a:visited {
+    color: whitesmoke;
+  }
+
+  #navbar a:active {
+    color: var(--burnt-umber);
+  }
+
+  #navbar ul {
+    background-color: var(--charcoal-2);
+  }
+
+  a {
+    color: var(--cadet-gray);
+  }
+
+  a:link {
+    color: var(--cadet-gray);
+  }
+
+  a:visited {
+    color: var(--burnt-umber);
+  }
+
+  #navbutton {
+    margin-right: 10px;
+  }
+
+  h1 {
+    color: whitesmoke;
+  }
+
+  p {
+    color: lightgrey;
+  }
+
+  #div-1 {
+    border-top: 5px solid var(--burnt-umber);
+  }
+
+  .card-text {
+    color: lightgrey;
+  }
+
+  .card-body {
+    background-color: var(--charcoal-2);
+  }
+
+  .album {
+    background-color: var(--charcoal);
+  }
+
+  .card {
+    background-color: var(--charcoal-2);
+  }
+
+  #footer-wrapper {
+    border-top: 5px solid var(--burnt-umber);
+    background-color: var(--charcoal-2);
+    padding-bottom: 1.5rem;
+  }
+
+  #copyright {
+    color: whitesmoke;
+    margin-left: 1rem;
+  }
+
+  #resume {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    background-color: var(--charcoal-2);
+    border-top: 5px solid var(--burnt-umber);
+  }
+
+
+  .context {
+    color: whitesmoke;
+  }
+
+  .value {
+    color: lightgray;
+  }
+
+  .section-wrapper {
+    background-color: var(--charcoal-2);
+    border-bottom: 5px solid var(--burnt-umber);
+    margin-bottom: 4rem;
+  }
+
+  .project-text {
+    font-size: 22px;
+    color: lightgray;
+  }
+
+  .section-demo {
+    background-color: var(--charcoal-2);
+    border-top: 5px solid var(--burnt-umber);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .footer-text {
+    color: whitesmoke;
+  }
+
+  .about-greeting {
+    color: whitesmoke;
+  }
+
+  .hidden {
+    overflow: hidden;
+  }
