@@ -113,23 +113,60 @@
             <!-- Get some images over here? -->
           </div>
           <div class="col-md-7">
+
             <h3><span class="context">Overview</span></h3>
-            <p class="project-text">
-              I used DirectX11 to implement a Screen Space Ambient Occlusion post processing effect.  This effect utilized several rendertargets, these include: the base color render target,
-               a normals render target, ambient light render target for image based lighting, a depth render target and finally two render targets for the Screen Space Ambient Occlusion effect, the base SSAO effect, and a blur pass that smooths out the samples from the SSAO render target.
-              Learn and implement a more complex post processing effect that utilizes several different rendertargets.</p>
+            <p class="project-text">Screen Space Ambient Occlusion (SSAO) Implementation is a sophisticated post-processing effect created using DirectX11. This effect enhances the visual realism of scenes by simulating the occlusion of ambient light in screen space. The implementation leverages multiple render targets to achieve high-quality results, including base color, normals, ambient light, depth, and dedicated SSAO targets for both the base effect and a blur pass.</p>
             <h4><span class="context">Goals</span></h4>
             <p class="project-text">
             <ul>
               <li class="project-text">
-                Implement a more complex post processing effect that utilized several different render targets.
+                Advanced Post-Processing: Develop a complex SSAO effect using multiple render targets to deepen understanding of advanced rendering techniques.
               </li>
             </ul>
             </p>
 
-            
+            <h4><span class="context">Links To Project </span> </h4>
+            <p class="project-text"><a class="project-text" href="https://github.com/Iain-Roach/IGME-542/tree/main/Assignment%208%20-%20SSAO/AdvancedDX11Starter-main">github</a></p>
 
 
+            <h3><span class="context">Detailed Info</span> </h3>
+            <p class="project-text">In this project, I implemented a Screen Space Ambient Occlusion (SSAO) effect in DirectX11. This process involved the following key components:
+              <ul>
+                <li class="project-text">Base Color Render Target: Stores the primary color information of the scene.</li>
+                <li class="project-text">Normals Render Target: Captures the surface normals required for accurate lighting calculations.</li>
+                <li class="project-text">Ambient Light Render Target: Used for image-based lighting, enhancing the realism of ambient light in the scene.</li>
+                <li class="project-text">Depth Render Target: Contains the depth information necessary for calculating occlusion.</li>
+                <li class="project-text">SSAO Render Targets: Two targets are used for the SSAO effect. The first target applies the base SSAO effect, while the second target is for a blur pass that smooths the samples, reducing noise and improving visual quality.</li>
+              </ul>
+            </p>
+
+
+
+
+            <h4><span class="context">Implement Details</span></h4>
+            <p class="project-text">The implementation process included the following steps:
+               <ol>
+                <li class="project-text">Render Target Setup: Configure multiple render targets to store essential scene information such as base color, normals, ambient light, and depth.</li>
+                <li class="project-text">SSAO Calculation: Use the depth and normals render targets to compute the occlusion factor for each pixel, creating a base SSAO effect.</li>
+                <li class="project-text">Blur Pass: Apply a blur filter to the SSAO render target to smooth out the occlusion samples, reducing artifacts and enhancing visual coherence.</li>
+                <li class="project-text">Integration: Combine the SSAO effect with the final scene render to achieve realistic ambient occlusion.</li>
+               </ol class="project-text">
+               <!-- In designing the gamemodes I wanted to build onto that core gameplay loop where the player can interact with the gamemode in a simple way and the overarching 
+               goal of the gamemode will be the same as the core gamemode.The Spray-king gamemode is just the Free For All gamemode of Ninjas on Trampolines but there is a new
+               permanent item in the match.  The spraycan. Players can pick up the spraycan and it allows them to passively paint the environment as they run around. If another
+               player kills the player holding the spraycan will be able to pick up the spraycan. -->
+              <!-- For the paintball gamemode I wanted to add a more chaotic element into the game that is still interacted with in a simple manner.  The Paintball bounces around the stage and can be hit by a player
+               to send it flying, bouncing around the stage, and turn it into their color. While the paintball is in this state it will passively paint onto the environemnt as well as kill anyplayer that comes into contact that doesn't share a color. -->
+            </p>
+            <h4><span class="context">Future Enhancements</span></h4>
+            <p class="project-text">
+              To further improve this project I would look towards: 
+              <ul>
+                <li class="project-text">Performance Optimization: Explore optimizations to improve the computational efficiency of the SSAO effect.</li>
+                <li class="project-text">Quality Improvements: Investigate advanced blur techniques and alternative SSAO algorithms to further enhance visual fidelity.</li>
+                <li class="project-text">Extended Platform Support: Adapt the implementation for other graphics APIs, such as DirectX12, to strengthen my understanding of DirectX12.</li>
+              </ul>
+            </p>
           </div>
         </div>
 
